@@ -4,7 +4,7 @@ import Loader from './Loader/Loader.jsx';
 import { Notify } from 'notiflix';
 import { BTNLoadMore } from './Button/Button.jsx';
 import { fetchPictures } from './Api/fetchPictures.js';
-import { ImageGallery } from './ImageGallery/ImageGallery.jsx';
+import  ImageGallery  from './ImageGallery/ImageGallery.jsx';
 import { SearchBar } from './SearchBar/Searchbar.jsx';
 import { ErMessage } from './SearchBar/ErMessage.jsx';
 
