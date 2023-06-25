@@ -4,7 +4,7 @@ import { ImaGalleryUl } from './ImageGallery.styled.js';
 import { Modal } from '../Modal/Modal.jsx';
 
 export const ImageGallery = ({ images }) => {
-  console.log('images', images);
+  
   const [isModal, setIsShowModal] = useState(false);
   const [ImageData, setImageData] = useState({});
   //знаходжу картинку по кліку по айді
@@ -15,7 +15,7 @@ export const ImageGallery = ({ images }) => {
 
   //   //закриття модалки
   function modalIsClose() {
-    this.setState({ isModal: false });
+    setIsShowModal(false);
   }
 
   return (
