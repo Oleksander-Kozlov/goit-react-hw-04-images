@@ -46,14 +46,14 @@ export const App = () => {
       }
       try {
         //ініціалізація абортконтролера
-        if (abortCtrl.current) {
-          abortCtrl.current.abort();
-        }
+        // if (abortCtrl.current) {
+        //   abortCtrl.current.abort();
+        // }
         abortCtrl.current = new AbortController();
         setIsLoading(true);
         setError(null);
         //запит на API
-        const images = await fetchPictures(searchImg, abortCtrl, page);
+        const images =   fetchPictures(searchImg, abortCtrl, page);
 
         // додаю у стан масив даних для  для галереї
         setSearchAr(prevSearchAr => {          
